@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apurva R. Chavan — Profile & Fit (Persana AI)</title>
+  <meta name="description" content="Single‑page profile and role fit for Apurva R. Chavan (Data / ML & Backend Engineer)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Archivo:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Neon glass theme */
+      --bg: #0b1220; --ink:#e6e9f5; --muted:#9aa4bf; --line:rgba(255,255,255,.08); --card:rgba(255,255,255,.06);
+      --accent:#7c3aed; --accent2:#06b6d4; --radius:18px; --shadow:0 12px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:radial-gradient(1200px 800px at 10% -10%, rgba(124,58,237,.25), transparent 60%), radial-gradient(1000px 700px at 100% 0%, rgba(6,182,212,.18), transparent 50%), var(--bg); color:var(--ink); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1080px; margin:0 auto; padding:30px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px; border-radius:var(--radius); background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid var(--line); box-shadow:var(--shadow); backdrop-filter: blur(10px)}
+    .brand{display:flex; align-items:center; gap:14px}
+    .avatar{inline-size:60px; block-size:60px; border-radius:16px; display:grid; place-items:center; font-weight:800; color:#fff; background:conic-gradient(from 180deg, var(--accent), var(--accent2), var(--accent)); box-shadow:0 0 0 4px rgba(255,255,255,.06), var(--shadow)}
+    nav{display:flex; gap:10px; flex-wrap:wrap}
+    nav a{border:1px solid var(--line); padding:10px 14px; border-radius:999px; background:rgba(255,255,255,.06); box-shadow:var(--shadow)}
+    h1{font-family:Archivo, system-ui; font-size:44px; line-height:1.1; margin:8px 0 6px}
+    h2{font-family:Archivo, system-ui; font-size:22px; margin:0 0 10px}
+    p{margin:8px 0}
+    .muted{color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow); backdrop-filter: blur(10px)}
+    .grid{display:grid; gap:18px}
+    .cols-12{grid-template-columns:repeat(12,1fr)}
+    .span-4{grid-column:span 4}
+    .span-6{grid-column:span 6}
+    .span-8{grid-column:span 8}
+    .stack{display:flex; flex-wrap:wrap; gap:10px}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.06); font-size:14px; box-shadow:var(--shadow)}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px; font-weight:700; color:#0b1220; background:linear-gradient(135deg,var(--accent),var(--accent2)); border:1px solid #0000; box-shadow:var(--shadow)}
+    .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--line)}
+    ul{margin:8px 0 0 18px; line-height:1.7}
+    footer{margin:32px 0 10px; text-align:center; color:var(--muted); font-size:13px}
+    @media (max-width:920px){.cols-12{grid-template-columns:repeat(6,1fr)} .span-8,.span-6,.span-4{grid-column:span 6}}
+
+    /* Projects grid cards */
+    .projects{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    .project{display:flex; flex-direction:column; gap:8px; transition: transform .15s ease, box-shadow .15s ease}
+    .project:hover{transform: translateY(-2px); box-shadow:0 16px 40px rgba(0,0,0,.45)}
+    .project .title{font-weight:700}
+    .project .meta{font-size:13px; color:var(--muted)}
+    @media (max-width:920px){.projects{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">AR</div>
+        <div>
+          <div style="font-weight:800; letter-spacing:.2px">Apurva Ravikar Chavan</div>
+          <div class="muted" style="font-size:13px">Data Scientist / ML & Backend Engineer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#fit">How I can help</a>
+        <a href="#plan">30‑60‑90</a>
+      </nav>
+    </header>
+    <section class="card" style="margin-top:16px; display:flex; align-items:center; justify-content:space-between; gap:16px">
+      <div>
+        <h2 style="margin:0">Machine Learning Engineer — Persana AI</h2>
+        <p class="muted" style="margin:6px 0 0">Embeddings • RAG / retrieval • agent reliability • LLM evals • billion‑scale pipelines</p>
+      </div>
+      <div class="stack">
+        <span class="pill">PyTorch</span>
+        <span class="pill">Hugging Face</span>
+        <span class="pill">LangChain</span>
+        <span class="pill">OpenSearch / FAISS</span>
+        <span class="pill">Pinecone</span>
+        <span class="pill">AWS SageMaker/ECS/Lambda</span>
+        <span class="pill">Docker</span>
+        <span class="pill">Node.js / BullMQ</span>
+      </div>
+    </section>
+    <section id="about" class="card" style="margin-top:16px">
+      <h2>About</h2>
+      <p>I build <strong>end‑to‑end ML systems</strong> for GTM agents: ingest market/person/company signals → normalize/enrich → <strong>embed & retrieve</strong> → <strong>LLM synthesis with guardrails</strong> → serve with evals/observability. Strengths in <strong>embeddings, RAG, ranking</strong> and production backends. I optimize for <strong>reliability, grounding, latency</strong>, and <strong>privacy</strong> so agents stay factual at scale.</p>
+      <div class="stack" style="margin-top:10px">
+        <span class="pill">New Haven, CT (ET)</span>
+        <a class="pill" href="mailto:apurvachavan125@gmail.com">apurvachavan125@gmail.com</a>
+        <a class="pill" href="https://github.com/Apurva1205" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="https://www.linkedin.com/in/apurvachavan125" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="grid cols-12" style="margin-top:16px">
+      <div class="span-8 card">
+        <h2>Why Persana</h2>
+        <ul>
+          <li><strong>Agentic GTM focus:</strong> love building embedding + retrieval stacks that surface <em>who</em> to reach and <em>why</em>, then grounding LLMs with provenance.</li>
+          <li><strong>Reliability over hype:</strong> automatic evals, golden sets, and offline ⇄ online metrics to shrink hallucinations and raise conversion.</li>
+          <li><strong>Operate at signal scale:</strong> resilient pipelines, dedup/entity‑resolution, and efficient indexes to handle billions of datapoints.</li>
+        </ul>
+      </div>
+      <div class="span-4 card">
+        <h2>Tech match</h2>
+        <ul>
+          <li>PyTorch · Hugging Face</li>
+          <li>RAG (LangChain), prompt/versioning</li>
+          <li>OpenSearch · FAISS / Pinecone</li>
+          <li>Python · Node.js · BullMQ</li>
+          <li>AWS (SageMaker, ECS, Lambda), Docker</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="card" style="margin-top:16px">
+      <h1>Selected projects</h1>
+      <div class="projects" style="margin-top:10px">
+        <div class="project card">
+          <div class="title">AI Resume Enhancer</div>
+          <div class="meta">FastAPI · vector search · eval harness</div>
+          <p class="muted">Resume→JD matcher with retrieval, scoring, gap analysis, and offline evals — mirrors prospect fit scoring.</p>
+          <div class="stack">
+            <a class="btn" href="https://github.com/Apurva1205/AI-RESUME-ENHANCER" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+        <div class="project card">
+          <div class="title">Energy Load Forecasting</div>
+          <div class="meta">Time‑series pipeline · model service · alerts</div>
+          <p class="muted">ETL + forecasting with cached aggregates and anomaly alerts; production mindset for reliability and cost.</p>
+          <div class="stack">
+            <a class="btn" href="https://github.com/Apurva1205/Time-Series-Forecasting-For-Energy-Consumption" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+        <div class="project card">
+          <div class="title">GTM Agent — RAG Experiments</div>
+          <div class="meta">Retrieval pipelines · ranking · observability</div>
+          <p class="muted">Built retrieval + synthesis prototypes with guardrails and evaluation; emphasis on grounding and latency.</p>
+          <div class="stack">
+            <a class="btn" href="https://github.com/Apurva1205/LLMs-in-Finance" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="grid cols-12" style="margin-top:16px">
+      <div class="span-8 card">
+      <h2>Core skills</h2>
+      <div class="stack">
+        <span class="pill">PyTorch</span>
+        <span class="pill">Transformers (HF)</span>
+        <span class="pill">RAG / Retrieval</span>
+        <span class="pill">OpenSearch</span>
+        <span class="pill">FAISS / Pinecone</span>
+        <span class="pill">Python · Node.js</span>
+        <span class="pill">Pandas / NumPy</span>
+        <span class="pill">Docker / CI</span>
+        <span class="pill">AWS (SageMaker/ECS/Lambda)</span>
+        <span class="pill">Eval Harnesses</span>
+      </div>
+    </div>
+    <div class="span-4 card">
+      <h2>Working style</h2>
+      <ul>
+        <li>Vertical slice → measure → iterate.</li>
+        <li>Typed contracts, tests, runbooks.</li>
+        <li>Metrics: grounding, win‑rate, latency, cost.</li>
+      </ul>
+    </div>
+    </section>
+
+    <section id="highlights" class="grid cols-12" style="margin-top:16px">
+      <div class="span-6 card">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Designed retrieval stacks that turn messy web/CRM data into ranked, explainable signals.</li>
+          <li>Shipped NLP models with <em>golden set</em> evals and drift monitoring.</li>
+          <li>Raised reliability with caching, backpressure, and idempotent job design.</li>
+        </ul>
+      </div>
+      <div class="span-6 card">
+        <h2>What you can expect</h2>
+        <ul>
+          <li>Hands‑on ownership and crisp communication.</li>
+          <li>Readable code, pragmatic design docs, and automated checks.</li>
+          <li>Product focus: measurable pipeline/revenue impact.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="fit" class="card" style="margin-top:16px">
+      <h2>How I can help Persana</h2>
+      <ul>
+        <li><strong>Embeddings & retrieval:</strong> train/select domain‑specific embeddings; build OpenSearch/FAISS/Pinecone indexes with dedup + entity resolution.</li>
+        <li><strong>Grounded agents:</strong> strict retrieval→reasoning contracts, citation/provenance, and selective generation to reduce hallucinations.</li>
+        <li><strong>Agent reliability:</strong> eval frameworks (functional + judgment), golden datasets, regression dashboards, and canary rollouts.</li>
+        <li><strong>Signal pipelines:</strong> scalable connectors, schema evolution, and quality scoring for billions of datapoints.</li>
+        <li><strong>Latency & cost:</strong> caching, batching, adaptive search depth, and model routing to keep p95 low.</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="grid cols-12" style="margin-top:16px">
+      <div class="span-8 card">
+        <h2>30‑60‑90 plan</h2>
+        <ol>
+          <li><strong>Days 1‑10:</strong> local env + tracing; reproduce a thin "prospect fit" slice (embed → retrieve → rank → cite); define evals & golden sets.</li>
+          <li><strong>Days 11‑30:</strong> ship a reliability upgrade: retrieval filters + reranking; add error taxonomies; wire dashboards for grounding/latency.</li>
+          <li><strong>Days 31‑60:</strong> scale: OpenSearch tuning + FAISS flat/IVF benchmarks; SageMaker/ECS deploy; harden queues with BullMQ; runbooks/on‑call.</li>
+        </ol>
+      </div>
+      <div class="span-4 card">
+        <h2>Tooling I’d use</h2>
+        <ul>
+          <li>PyTorch · HF Transformers</li>
+          <li>LangChain (RAG orchestration)</li>
+          <li>OpenSearch · FAISS / Pinecone</li>
+          <li>AWS SageMaker/Lambda/ECS · Docker</li>
+          <li>dbt/Airflow (optional) · BullMQ</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Apurva R. Chavan · Single‑file HTML</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
